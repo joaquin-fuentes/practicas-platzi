@@ -63,6 +63,10 @@ ESTILOS SECTION BUSCADOR */
 
 .main{
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .main__title{
     color: white;
@@ -83,6 +87,16 @@ ESTILOS SECTION BUSCADOR */
 ::placeholder{
     color: white;
 }
+/* 
+estilos title */
+.categories__title{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 10px;
+    width: 100%;
+}
+
 /* 
 SECCION CARRUSEL  */
 
@@ -146,10 +160,42 @@ SECCION CARRUSEL  */
     width: 20px;
     height: 20px;
 }
-.carousel-item__detail--title{
+.carousel-item__details--title{
     color: white;
     font-weight: 680;
 }
-.carousel-item__detail--subtitle{
+.carousel-item__details--subtitle{
     color: white;
+}
+/* FOOTER HOME  */
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color:#8F57FD ;
+}
+.footer a{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+/* MEDIDAS RESPONSIVE */
+
+@media only screen and (max-width:600px){
+    
+
+
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
